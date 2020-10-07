@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typography</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/dc3beb17c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -16,15 +18,16 @@
     </header>
     <main>
         <section>
-            <h2>Color</h2>
-
+            <h2>color:</h2>
+            <h3>defines the color of the text</h3>
             <article>
-                <h4>Default Value
-                </h4>
                 <div>
-                    <div>Defines the color of the text
-                        <h5>Syntax</h5>
-                        color: "color-value"
+                    <div>
+                        <h4>Color name
+                        </h4>
+                        You can use one of the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">140+ color names</a>.
+                        <h5>color: red;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -39,15 +42,14 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>Transparent color: rgba(0, 0, 0, 0.501);
-                </h4>
                 <div>
-                    <div>The last parameter in the rgba definition defines the opacity of the text element
-                        <h5>Syntax</h5>
-                        color: "color-value"
+                    <div>
+                        <h4>hex code
+                        </h4>
+                        You can use hexadecimal color codes.
+                        <h5>color: #05ffb0;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -61,45 +63,131 @@
                     </aside>
                 </div>
             </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>rgb value               </h4>
+                        You can use rgb() color codes:
+
+                        <li>the first value is for red</li>
+                        <li>the second value is for green</li>
+                        <li>the third value is for blue</li>
+
+                        Each of them can have a value between 0 and 255.
+                        <h5>color: rgb(50, 115, 220);</h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>
+                            Hello World ;)
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>rgba value</h4>
+                        You can use rgba() color codes:
+
+                        <li>the first 3 values are for rgb</li>
+                        <li>the 4th value is for the alpha channel and defines the opacity of the color</li>
+
+                        The alpha value can go from zero 0 (transparent) to one 1 (opaque).
+                        <h5>color: rgba(0, 0, 0, 0.5);
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>
+                            Hello World ;)
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>hsl value</h4>
+                        You can use hsl() color codes:
+
+                        <li>the first 3 values are for rgb</li>
+                        <li>the 4th value is for the alpha channel and defines the opacity of the color</li>
+
+                        <li>The alpha value can go from zero 0 (transparent) to one 1 (opaque).    the first value is for hue and can go from 0 to 359</li>
+                        <li>the second value is for saturation and go from 0% to 100%</li>
+                        <li>the third value is for luminosity and go from 0% to 100%</li>
+                        <h5>color: hsl(14, 100%, 53%);
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>
+                            Hello World ;)
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div><h4>hsla value</h4>
+
+                        You can use hsl()a color codes:
+
+                        <li>the first 3 values are for hsl</li>
+                        <li>the 4th value is for the alpha channel and defines the opacity of the color</li>
+                        The alpha value can go from zero 0 (transparent) to one 1 (opaque).
+                        <h5>color: hsla(14, 100%, 53%, 0.6);
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>
+                            Hello World ;)
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
         </section>
 
         <section>
-            <h2>Font-family</h2>
+            <h2>font-family:</h2>
+            <h3>defines the font family of the text</h3>
 
             <article>
-                <h4>Default Value
-                </h4>
-                <div>
-                    <div>Sets a specific font for the text
-                        <h5>Syntax</h5>
-                        font-family: "font (family) name"
-                    </div>
-                    <aside>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <p>
-                            Hello World ;)
-                        </p>
-                    </aside>
-                </div>
-            </article>
-
-            <hr>
-
-            <article>
-                <h4>Internal Specific Font {font-family:'Courier New', Courier, monospace;}
-                </h4>
                 <div>
                     <div> 
+                        <h4>Internal Specific Font</h4>
+                        When using multiple values, the font-family list of font families defines the priority in which the browser should choose the font family.
                         <ul>
-                            <li>           Browser tries Times New Roman first. </li>
+                            <li> Browser tries Times New Roman first. </li>
                             <li>If its not possible to use tries Times. </li>
                             <li>Then it tries Serif</li>
                             <li>If the last one is also not possible to use, then it uses the default font.</li>
                         </ul>
+                        <h5>font-family: 'Times New Roman', Times, serif;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -114,14 +202,14 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>External Specific Font with HTML link {font-family: 'Fredoka One', cursive;}
-                </h4>
                 <div>
                     <div> 
-                        External fonts can be used in HTML via &lt;link ref&gt;
+                        <h4>External Specific Font with HTML link</h4>
+                        
+                        Insert the font link in the &lt;head&gt;
+                        <h5>&lt;link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"&gt;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -136,14 +224,13 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>External Specific Font via CSS Import {font-family: 'Abril Fatface', cursive;}
-                </h4>
                 <div>
                     <div> 
-                        External fonts can be used in HTML via @import url
+                        <h4>External Specific Font via CSS Import </h4>
+                        External fonts can be used in HTML via @import url on the top of the css file.
+                        <h5>@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -158,17 +245,18 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>External Specific Fonts from the Project folder {font-family: "Eleni's Font", monospace;}
-                </h4>
                 <div>
                     <div> 
+                        <h4>External Specific Fonts from the Project folder </h4>
                         External fonts can be used in HTML from the project folder as font files (like .ttf, .otf)
 
                         After adding the font file to your project folder you have to name it in your CSS like this: <br>
-                        @font-face {<br>font-family: "Eleni's Font", monospace; <br> src: url(./Assets/SourceCodePro-Light.ttf);<br>}
+                        <h5>                  @font-face {font-family: "Eleni's Font", monospace; <br> src: url(./Assets/SourceCodePro-Light.ttf);}</h5>
+                        Then you can call use it in your css like this:
+
+                        <h5>font-family: "Eleni's Font", monospace;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -185,15 +273,90 @@
         </section>
 
         <section>
-            <h2>Font-size</h2>
+            <h2>font-size:</h2>
+            <h3>defines the font size of the text</h3>
 
             <article>
-                <h4>Default Value
+                <div>
+                    <div>
+                        <h4>Default value</h4>
+                        The text will use the browser's default medium size.
+                        <h5>font-size: medium;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p> Hello World
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>Pixel values</h4>
+                        You can use pixel values.
+                        <h5>font-size: 20px;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>Hello World 
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>em values</h4>
+                        <ul>
+                            <li>The value is relative to the parent's font-size.</li>
+
+                            <li>As a result, the value will cascade if used on child elements.</li>
+                        </ul>
+                        <h5>font-size: 1.2em;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        Parent container: 20px;
+                        <div>font-size: 1.2em;(24px)
+                            <div>font-size: 1.2em;(28.8px)
+                                <div>font-size: 1.2em;(36.56px)</div>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <h4>rem values
                 </h4>
                 <div>
-                    <div>Defines the font size of the text
-                        <h5>Syntax</h5>
-                        color: "color-value"
+                    <div>
+                        <ul>
+                            <li>The value is relative to the root element's font-size, which is the html element.</li>
+                            <li>As a result, the value will not vary depending on the depth of the element in the HTML hierarchy, and will reamin context independent.</li>
+                        </ul>
+                        <h5>font-size: 1.2rem;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -213,15 +376,16 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>Transparent color: rgba(0, 0, 0, 0.501);
-                </h4>
                 <div>
-                    <div>The last parameter in the rgba definition defines the opacity of the text element
-                        <h5>Syntax</h5>
-                        color: "color-value"
+                    <div>   
+                        <h4>percentage values</h4>
+                        <ul>
+                            <li>The value is relative to the parent's font-size.</li>
+                            <li>As a result, the value will cascade if used on child elements.</li>
+                        </ul>
+                        <h5>font-size: 90%;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -229,10 +393,10 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        Parent container: 20px;
-                        <div>font-size: 1.2em;(24px)
-                            <div>font-size: 1.2em;(28.8px)
-                                <div>font-size: 1.2em;(36.56px)</div>
+                        Parent container: 18px;
+                        <div>Font-size: 90% = 16.2
+                            <div>Font-size: 90% = 14.58px
+                                <div>Font-size: 90% = 13.122px</div>
                             </div>
                         </div>
                         <p>
@@ -241,15 +405,19 @@
                 </div>
             </article>
 
-            <hr>
-
             <article>
-                <h4>Transparent color: rgba(0, 0, 0, 0.501);
-                </h4>
                 <div>
-                    <div>The last parameter in the rgba definition defines the opacity of the text element
-                        <h5>Syntax</h5>
-                        color: "color-value"
+                    <div>   
+                        <h4>relative keywords</h4>
+                            the value is relative to the parent.
+                        
+                            The following are available:
+                        <ul>
+                            <li>larger</li>
+                            <li>smaller</li>
+                        </ul>
+                        <h5>font-size: smaller;
+                        </h5>
                     </div>
                     <aside>
                         <ul>
@@ -257,10 +425,10 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        Parent container: 20px;
-                        <div>font-size: 1.2em;(24px)
-                            <div>font-size: 1.2em;(28.8px)
-                                <div>font-size: 1.2em;(36.56px)</div>
+                        Parent container: 18px;
+                        <div>Font-size: smaller
+                            <div>Font-size: smaller
+                                <div>Font-size: smaller<div>
                             </div>
                         </div>
                         <p>
@@ -269,42 +437,234 @@
                 </div>
             </article>
 
+            <article>
+                <div>
+                    <div>                           <h4>absolute keywords</h4>
+                        You can use absolute keywords. The value is relative to the root element html.
+                        The following are available:
+                            <ul>
+                                <li>xx-small</li>
+                                <li>x-small</li>
+                                <li>small</li>
+                                <li>medium</li>
+                                <li>large</li>
+                                <li>x-large</li>
+                                <li>xx-large</li>
+                            </ul>
+                            <h5>font-size: x-large;
+                            </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        html root element: 18px
+                        <div>Font-size: x-large
+                            <div>Font-size: x-large
+                                <div>Font-size: x-large<div>
+                            </div>
+                        </div>
+                        <p>
+                        </p>
+                    </aside>
+                </div>
+            </article>
+        </section>
 
+        <section>
+            <h2>HTML Text Formatting: </h2>
+            <h3>inline definition of special text</h3>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;b&gt; tag</h4>
+                        Bold text
+                        <h5>&lt;b&gt;Important&lt;/b&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p> I am a <b>bold</b> part of the text
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;strong&gt; tag</h4>
+                        Important text
+                        <h5>&lt;strong&gt;Important&lt;/strong&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p> I am an <strong>important</strong> part of the text
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;i&gt; tag</h4>
+                        Italic text
+                        <h5>&lt;i&gt;Italic&lt;/i&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p> I am an <i>italic</i> part of the text
+                        </p>
+                    </aside>
+                </div>
+            </article>
+            
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;em&gt; tag</h4>
+                        Emphasized text
+                        <h5>&lt;em&gt;Emphasized&lt;/em&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p> I am an <em>emphasized</em> part of the text
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;mark&gt; tag</h4>
+                        Marked text
+                        <h5>&lt;mark&gt;2&lt;mark&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p><mark>I am marked text</mark>
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;small&gt; tag</h4>
+                        Small text
+                        <h5>&lt;small&gt;2&lt;small&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>I am <small>small </small>text
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;del&gt; tag</h4>
+                        Deleted text
+                        <h5>&lt;del&gt;2&lt;/del&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p><del>deleted text</del>
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;sup&gt; tag</h4>
+                        Superscript text
+                        <h5>&lt;sup&gt;2&lt;/sup&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>H<sup>2</sup>O
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+            <article>
+                <div>
+                    <div>
+                        <h4>&lt;sub&gt; tag</h4>
+                        Subscript text
+                        <h5>&lt;sub&gt;2&lt;/sub&gt;
+                        </h5>
+                    </div>
+                    <aside>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <p>E=mc<sub>2</sub>
+                        </p>
+                    </aside>
+                </div>
+            </article>
+
+
+
+
+            
         </section>
     </main>
 
     <!-- rest of the content needs to be styled. it is an optional task -->
-    <div class="percentage">I am the parent and I am 20px
-        <div>I am 120% bigger</div>
-    </div>
-    <hr>
-    <div class="smaller"> I am smaller
-        <div>I am smaller
-            <div>I am smaller
-            </div>
-        </div>
-    </div>
-
-    <hr>
-    <div class="sm">
-        Small
-    </div>
-    <div class="md">
-        Medium
-    </div>
-    <div class="lg">
-        Large
-    </div>
-    <hr>
-
-    <div>I am an <strong>Important</strong> part of the text</div>
-
-    <div>I am an <em>Important</em> part of the text</div>
-    <div>E = mc <sup>2</sup></div>
-    <div>H<sub>2</sub>O</div>
-    <div>I am a <span class="highlight">highlighted</span> part of the text</div>
-    
-    <div><small><del>20$</del></small><mark>30$</mark></div>
 
     <hr>
 
@@ -317,7 +677,122 @@
 
     <br>
     <div class="justified">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, modi deleniti. Consequuntur autem aperiam cupiditate amet, distinctio possimus cum quas ratione iste debitis optio nostrum maiores quae ipsa aliquid. Explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, modi deleniti. Consequuntur autem aperiam cupiditate amet, distinctio possimus cum quas ratione iste debitis optio nostrum maiores quae ipsa aliquid. Explicabo?</div>
+
     <hr>
+
+    <h2>Font-weight</h2>
+
+    <p class="bold">Hello World!</p>
+    <p class="font-w-800">Hello World!</p>
+    <p class="bolder">Hello World!</p>
+    
+    <div class="parent"> Parent
+        <div class="child">Child</div>
+    </div>
+
+    <ul>
+        <li>
+            100 Thin
+        </li>
+        <li>
+            200 Extra Light
+        </li>
+        <li>
+            300 Light
+        </li>
+        <li>
+            400 Normal
+        </li>
+        <li>
+            500 Medium
+        </li>
+        <li>
+            600 Semi bold
+        </li>
+        <li>
+            700 Bold
+        </li>
+        <li>
+            800 Extra Bold
+        </li>
+        <li>
+            900 Ultra Bold
+        </li>
+    </ul>
+        
+    <hr>
+
+    <h2>Font-style</h2>
+
+    <div class="italic">Hello World</div>
+    <div class="oblique">This is more slanted then italic if possible</div>
+
+    <hr>
+
+    <h2>Text-Decoration</h2>
+    <div class="underline">Hello World</div>
+
+    <div class="none">Removes any text decoration</div>
+
+    <hr>
+
+    <h2>Text-Transform</h2>
+    <div class="capitalize">hello world
+    <br>
+    Capitalize turns the first letter of each word into a capital letter
+    </div>
+
+    <div class="uppercase">hello world
+        <br>
+        Uppercase turns every letter into a capital letter
+    </div>
+
+    <div class="lowercase">HELLO WORLD
+        <br>
+        Lowercase turns every letter into a SMALL letter
+    </div>
+
+    <hr>
+
+    <h2>Text-Shadow</h2>
+    <h4>Syntax</h4>
+
+    <ul> 
+        <li>h-shadow: Required. The position of the horizontal shadow. Negative values are allowed</li>
+        
+        <li>v-shadow: Required. The position of the vertical shadow. Negative values are allowed</li>
+        
+        <li>blur-radius: Optional. The blur radius. Default value is 0</li>
+        <li>color: Optional. The color of the shadow. Look at CSS Color Values for a complete list of possible color values</li>
+        <li>none: Default value. No shadow</li>
+        
+        <li>initial: Sets this property to its default value. Read about initial</li>
+        
+        <li>inherit: Inherits this property from its parent element. Read about inherit</li>
+    </ul>
+
+    <p class="text-shadow">Hello World</p>
+
+    <hr>
+
+    <h2>Font Awesome</h2>
+    <ul>
+        <li>In  order to use font-awesome, copy the script link in your the head of your html file.</li>
+        <li>Choose an icon fron the website and copy and paste the code into your html body</li>
+        <li>Edit the icon in your css, using font properties</li>
+        <li>You can also edit the sizes from pre-set classes of font-awesome. The sizing is relative using "em" units. So they will always be relavant to the parent element.</li>
+    </ul>
+
+    <i class="fas fa-cat"></i>
+
+    <i class="fas fa-code-branch"></i>
+
+    <i class="fas fa-glass-martini color-black"></i>
+
+    <hr>
+
+    <p class="ps">I am a paragraph</p>
+
     <footer>
         <h3>
             2020 October

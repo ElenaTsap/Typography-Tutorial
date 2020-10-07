@@ -23,7 +23,7 @@ header, footer {
 section {
     border: 4px solid black;
     border-radius: 24px;
-    padding: 4%;
+    padding: 4% 4% 0% 4%;
     margin-bottom: 4%;
 }
 
@@ -39,45 +39,70 @@ section:nth-of-type(3){
     background-color: #f9ffc0;
 }
 
+a {
+    text-decoration:}
 
 h2{
     /* color: #D9D9D9; */
     margin-top: 0%;
+    margin-bottom: 8%;
+    display: inline-block;
 }
 
-hr {
-    border: 2px solid black;
-    margin-top: 5%;
+h3 {
+    margin-top: 0px;
+    margin-bottom: 8%;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+    font-size: 24px;
+}
+
+h4 {
+    margin-bottom: 8px;  
+    margin-top: 0px;
+    font-size: 18px;
 }
 
 h5 {
-    margin-bottom: 0px;  
+    margin-top: 20px;
+    background-color: #F2F2F2;
+    color:blue;
+    display: inline-block;
+    padding: 1%;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    width: 100%;
+    word-break: break-all;
 }
 
 article{
-    height: 260px;
+    min-height: 260px;
+    margin-bottom: 10%;
 }
 
 article > div {
     display: flex;
     width: 100%;
-    height:80%;
+/*     height:80%; */
 }
 
 article > div > div {
     display: inline-block;
     width: 50%;
+    min-height: 240px;
     padding-right: 4%;
-    padding-top: 2%;
-
+    font-size: 16px
 }
 
 /* The browser window */
 
-aside {
+section > article > div > aside {
     display: inline-block;
-    width: 50%;
-    height:100%;
+    width: 50vw;
+    min-height: 200px;
+    background-color: #F2F2F2;
     border: 4px solid black;
     border-radius: 10px;
     overflow: hidden;
@@ -111,16 +136,14 @@ display: block;
 width: 50%;
 
 margin: auto;
-padding-top: 40px;
+padding-top: 36px;
 
-font-size: 40px;
+font-size: 30px;
 
 color: rgba(255, 0, 0);
 }
 
-section > article> div > aside {
-    background-color: #F2F2F2;
-}
+
 
 /* 1st Section */
 
@@ -129,24 +152,45 @@ section:nth-of-type(1) > article > div > aside {
     background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX32598234.jpg)
 }
 
+section:nth-of-type(1) > article:nth-of-type(1) > div > aside > p {
+    color: red;
+}
+
 section:nth-of-type(1) > article:nth-of-type(2) > div > aside > p {
-    color: rgba(255, 0, 0, 0.6);
+    color: #05ffb0;
+
+}
+
+section:nth-of-type(1) > article:nth-of-type(3) > div > aside > p {
+    color: rgb(50, 115, 220);
+}
+
+section:nth-of-type(1) > article:nth-of-type(4) > div > aside > p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+section:nth-of-type(1) > article:nth-of-type(5) > div > aside > p {
+    color: hsl(14, 100%, 53%);
+}
+
+section:nth-of-type(1) > article:nth-of-type(6) > div > aside > p {
+    color: hsla(14, 100%, 53%, 0.6);
 }
 
 /* 2nd Section */
-section:nth-of-type(2) > article:nth-of-type(2) > div > aside > p {
+section:nth-of-type(2) > article:nth-of-type(1) > div > aside > p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-section:nth-of-type(2) > article:nth-of-type(3) > div > aside > p {
+section:nth-of-type(2) > article:nth-of-type(2) > div > aside > p {
     font-family: 'Fredoka One', cursive;
 }
 
-section:nth-of-type(2) > article:nth-of-type(4) > div > aside > p {
+section:nth-of-type(2) > article:nth-of-type(3) > div > aside > p {
     font-family: 'Abril Fatface', cursive;
 }
 
-section:nth-of-type(2) > article:nth-of-type(5) > div > aside > p {
+section:nth-of-type(2) > article:nth-of-type(4) > div > aside > p {
     font-family: "Eleni's Font", monospace;
 }
 
@@ -154,69 +198,23 @@ section:nth-of-type(2) > article:nth-of-type(5) > div > aside > p {
 
 /* first article */
 
-
-section:nth-of-type(3) > article:nth-of-type(1) > div > aside {
-    font-size: 1.2rem;
+section:nth-of-type(3) > article:nth-of-type(1) > div > aside > p {
+    font-size: medium;
 }
 
-section:nth-of-type(3) > article:nth-of-type(1) > div > aside > div {
-    font-size: 1.2rem;
-    background-color: rgb(255, 0, 0);
-    margin: 10px;
-    padding: 5px;
-}
+/* second article */
 
-section:nth-of-type(3) > article:nth-of-type(1) > div > aside > div > div {
-    font-size: 1.2rem;
-    background-color: green;
-    margin: 10px;
-    padding: 5px;
-}
-
-section:nth-of-type(3) > article:nth-of-type(1) > div > aside > div > div > div {
-    font-size: 1.2rem;
-    background-color: blue;
-    margin: 10px;
-    padding: 10px;
-}
-
-/* second article  */
-section:nth-of-type(3) > article:nth-of-type(2) {
-    height: 460px;
-}
-
-section:nth-of-type(3) > article:nth-of-type(2) > div > aside {
-    font-size: 20px;
-}
-
-section:nth-of-type(3) > article:nth-of-type(2) > div > aside > div {
-    font-size: 1.2em;
-    background-color: rgb(255, 0, 0);
-    margin: 10px;
-    padding: 5px;
-}
-
-section:nth-of-type(3) > article:nth-of-type(2) > div > aside > div > div {
-    font-size: 1.2em;
-    background-color: green;
-    margin: 10px;
-    padding: 5px;
-}
-
-section:nth-of-type(3) > article:nth-of-type(2) > div > aside > div > div > div {
-    font-size: 1.2em;
-    background-color: blue;
-    margin: 10px;
-    padding: 10px;
+section:nth-of-type(3) > article:nth-of-type(2) > div > aside > p {
+    font-size: 18px;
 }
 
 /* third article  */
 section:nth-of-type(3) > article:nth-of-type(3) {
-    height: 460px;
+    min-height: 460px;
 }
 
 section:nth-of-type(3) > article:nth-of-type(3) > div > aside {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 section:nth-of-type(3) > article:nth-of-type(3) > div > aside > div {
@@ -235,6 +233,114 @@ section:nth-of-type(3) > article:nth-of-type(3) > div > aside > div > div {
 
 section:nth-of-type(3) > article:nth-of-type(3) > div > aside > div > div > div {
     font-size: 1.2em;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* fourth article  */
+section:nth-of-type(3) > article:nth-of-type(4) > div > aside {
+    font-size: 18px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(4) > div > aside > div {
+    font-size: 1.2rem;
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(4) > div > aside > div > div {
+    font-size: 1.2rem;
+    background-color: green;
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(4) > div > aside > div > div > div {
+    font-size: 1.2rem;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* fifth article  */
+
+
+section:nth-of-type(3) > article:nth-of-type(5) > div > aside {
+    font-size: 18px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(5) > div > aside > div {
+    font-size: 90%;
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(5) > div > aside > div > div {
+    font-size: 90%;
+    background-color: green;
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(5) > div > aside > div > div > div {
+    font-size: 90%;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* sixth article  */
+
+section:nth-of-type(3) > article:nth-of-type(6) > div > aside {
+    font-size: 18px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(6) > div > aside > div {
+    font-size: smaller;
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(6) > div > aside > div > div {
+    font-size: smaller;
+    background-color: green;
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(6) > div > aside > div > div > div {
+    font-size: smaller;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* seventh article  */
+
+section:nth-of-type(3) > article:nth-of-type(7) > div > aside {
+    font-size: 18px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div {
+    font-size: x-large
+    background-color: rgb(255, 0, 0);
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div > div {
+    font-size: x-large
+    background-color: green;
+    margin: 10px;
+    padding: 5px;
+}
+
+section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div > div > div {
+    font-size: x-large
     background-color: blue;
     margin: 10px;
     padding: 10px;
@@ -285,3 +391,92 @@ section:nth-of-type(3) > article:nth-of-type(3) > div > aside > div > div > div 
     text-align: justify;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.font-w-800{
+    font-weight: 800;
+}
+
+.bolder{
+    font-weight: 800;
+}
+
+.parent{
+    font-weight: bold;
+}
+
+.child {
+    font-weight: lighter;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 8px blueviolet;
+}
+
+.fas {
+    font-size: 120px;
+    color: white;
+    margin: 10px;
+}
+
+.fa-cat {
+    text-shadow: 4px 4px 8px blueviolet;
+}
+
+.fa-code-branch {
+    text-shadow: 4px 4px 8px rgb(226, 70, 43);
+}
+
+.fa-glass-martini {
+    text-shadow: 4px 4px 8px rgb(184, 255, 102);
+}
+
+.color-black {
+    color: rgb(147, 255, 244);
+}
+
+.ps {
+    color: brown;
+}
+
+.ps::before {
+    content: "I am ::before pseudo element";
+    color: blue;
+    border: 1px solid black;
+}
+
+.ps::after {
+    content: "I am ::after pseudo element";
+    color: rgb(255, 0, 200);
+    border: 1px solid black;
+}
