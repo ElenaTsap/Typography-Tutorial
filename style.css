@@ -27,18 +27,6 @@ section {
     margin-bottom: 4%;
 }
 
-section:nth-of-type(1){
-    background-color: #BDDBD0;
-}
-
-section:nth-of-type(2){
-    background-color: #c0cdff;
-}
-
-section:nth-of-type(3){
-    background-color: #f9ffc0;
-}
-
 a {
     text-decoration:}
 
@@ -66,14 +54,13 @@ h4 {
 
 h5 {
     margin-top: 20px;
+    padding: 1%;
     background-color: #F2F2F2;
     color:blue;
-    display: inline-block;
-    padding: 1%;
+    display: table;
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
-    display: inline-block;
-    width: 100%;
+
     word-break: break-all;
 }
 
@@ -143,9 +130,11 @@ font-size: 30px;
 color: rgba(255, 0, 0);
 }
 
-
-
 /* 1st Section */
+
+section:nth-of-type(1){
+    background-color: #BDDBD0;
+}
 
 section:nth-of-type(1) > article > div > aside {
     font-weight: 900;
@@ -178,6 +167,12 @@ section:nth-of-type(1) > article:nth-of-type(6) > div > aside > p {
 }
 
 /* 2nd Section */
+
+
+section:nth-of-type(2){
+    background-color: #c0cdff;
+}
+
 section:nth-of-type(2) > article:nth-of-type(1) > div > aside > p {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -196,6 +191,10 @@ section:nth-of-type(2) > article:nth-of-type(4) > div > aside > p {
 
 /* 3rd Section */
 
+section:nth-of-type(3){
+    background-color: #e5e9b3;
+}
+
 /* first article */
 
 section:nth-of-type(3) > article:nth-of-type(1) > div > aside > p {
@@ -209,9 +208,6 @@ section:nth-of-type(3) > article:nth-of-type(2) > div > aside > p {
 }
 
 /* third article  */
-section:nth-of-type(3) > article:nth-of-type(3) {
-    min-height: 460px;
-}
 
 section:nth-of-type(3) > article:nth-of-type(3) > div > aside {
     font-size: 18px;
@@ -265,7 +261,6 @@ section:nth-of-type(3) > article:nth-of-type(4) > div > aside > div > div > div 
 }
 
 /* fifth article  */
-
 
 section:nth-of-type(3) > article:nth-of-type(5) > div > aside {
     font-size: 18px;
@@ -326,26 +321,33 @@ section:nth-of-type(3) > article:nth-of-type(7) > div > aside {
 }
 
 section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div {
-    font-size: x-large
+    font-size: x-large;
     background-color: rgb(255, 0, 0);
     margin: 10px;
     padding: 5px;
 }
 
 section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div > div {
-    font-size: x-large
+    font-size: x-large;
     background-color: green;
     margin: 10px;
     padding: 5px;
 }
 
 section:nth-of-type(3) > article:nth-of-type(7) > div > aside > div > div > div {
-    font-size: x-large
+    font-size: x-large;
     background-color: blue;
     margin: 10px;
     padding: 10px;
 }
 
+/*  fourth section */
+
+section:nth-of-type(4){
+    background-color: #e6cbd4;
+}
+
+/* fifth section */
 .percentage {
     font-size: 20px;
 }
