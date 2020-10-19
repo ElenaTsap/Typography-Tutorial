@@ -18,6 +18,7 @@ header {
 
 header, footer {
     color: #010D00;
+    text-align: center;
 }
 
 section {
@@ -34,17 +35,22 @@ a {
 h2 {
     /* color: #D9D9D9; */
     margin-top: 0%;
-    margin-bottom: 8%;
+    margin-bottom: 7%;
     display: inline-block;
 }
 
 h3 {
-    margin-top: 0px;
-    margin-bottom: 8%;
+    margin-top: 0%;
+    margin-bottom: 7%;
     font-weight: 400;
     font-style: italic;
     display: inline-block;
     font-size: 24px;
+}
+
+hr{
+    margin-bottom: 4%;
+    border: 2px solid black;
 }
 
 article{
@@ -68,7 +74,7 @@ section > article > div > div {
 h4 {
     margin-bottom: 8px;  
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h5 {
@@ -76,7 +82,7 @@ h5 {
     padding: 1%;
     background-color: #F2F2F2;
     color:blue;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 
